@@ -153,6 +153,27 @@ app.post('/boiler1', async (req,res)=>{
   res.redirect('/checklist');
 })
 
+//boiler2 업데이트
+app.post('/boiler2', async (req,res)=>{
+  let values = req.body.today;
+  let datas = await Boiler2.findOne({
+    order: [['updatedAt', 'DESC']]
+  })
+  let data = JSON.parse(JSON.stringify(datas));
+  console.log("로그", values, data)
+  let last_month = data.last_month;
+  let yesterday = data.yesterday;
+  let user = await Boiler.create({
+    last_month: last_month,
+    yesterday: yesterday,
+    today: values,
+    value: values - yesterday,
+    value_month: values - last_month,
+    state: '양호'
+  })
+  res.redirect('/checklist');
+})
+
 app.get('/report', (req,res)=>{
   if(req.session.userId) {
     res.sendFile(__dirname+"/pages/report.html")
