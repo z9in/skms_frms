@@ -51,10 +51,13 @@
             boiler1_title_el.innerHTML = '보일러1 : 점검을 완료하였습니다.'
         }else {
             month_boiler1_el.value = boiler1_data.last_month;
-            yesterday_boiler1_el.value = boiler1_data.yesterday;
-            today_boiler1_el.value = boiler1_data.today;
-            values_boiler1_el.value = boiler1_data.value;
-            stock_boiler1_el.value = boiler1_data.value_month;
+        yesterday_boiler1_el.value = boiler1_data.today;
+        today_boiler1_el.addEventListener('input', function(event) {
+            const changedValue = event.target.value; // 변경된 값 가져오기
+            console.log('변경된 값:', changedValue);
+            values_boiler1_el.value = event.target.value - boiler1_data.today;
+            stock_boiler1_el.value = event.target.value - boiler1_data.last_month;
+        })        
         }
         if(boiler2_krDates == koreanDate) {
             boiler2_el.forEach(e=>{
@@ -63,10 +66,13 @@
             boiler2_title_el.innerHTML = '보일러2 : 점검을 완료하였습니다.'
         }else {
             month_boiler2_el.value = boiler2_data.last_month;
-            yesterday_boiler2_el.value = boiler2_data.yesterday;
-            today_boiler2_el.value = boiler2_data.today;
-            values_boiler2_el.value = boiler2_data.value;
-            stock_boiler2_el.value = boiler2_data.value_month;
+            yesterday_boiler2_el.value = boiler2_data.today;
+            today_boiler2_el.addEventListener('input', function(event) {
+                const changedValue = event.target.value; // 변경된 값 가져오기
+                console.log('변경된 값:', changedValue);
+                values_boiler2_el.value = event.target.value - boiler2_data.today;
+                stock_boiler2_el.value = event.target.value - boiler2_data.last_month;
+            })
         }
         
 
