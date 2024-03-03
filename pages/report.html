@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" type="text/css" href="./index.css"> -->
+    <link rel="stylesheet" type="text/css" href="/report.css">
+</head>
+<body>
+    <div class="wrap">
+       <div class="title">
+        <a href="/dashboard">
+            <h1>시립마포청소년센터</h1>
+        </a>
+       </div>
+       <!-- title -->
+       <div class="date">
+        <p>
+            <span class="year">2024년</span>
+            <span class="monthy">2월</span>
+            <span class="day">3일</span>
+            <span class="hour">21</span>
+            <span class="minit" >57</span>
+        </p>
+       </div>
+       <!-- date -->
+       <div class="user_info">
+        <p>
+            <span>시립마포청소년센터</span>
+            <span class="bold userName">권동환</span>
+            <span>님</span>
+        </p>
+        </div> 
+        <!-- user_info -->
+        <div class="content">
+            <div class="check_list">
+                <div class="list_total">
+                    <p>업무 보고</p>
+                    <div class="check_lists">
+                        <div class="data_list">
+                            <ul class="boiler1">
+                                <li class="data_titles"><p>보일러1</p></li>
+                                <li>
+                                    <label for="전원지침">
+                                        <p>전월지침</p>
+                                        <span>:</span>
+                                        <input type="number" name="전월지침" id="month_boiler1" value="10000" readonly/>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="전일지침">
+                                        <p>전일지침</p>
+                                        <span>:</span>
+                                        <input type="number" name="전월지침" id="yesterday_boiler1" value="10000" readonly/>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="금일지침">
+                                        <p>금일지침</p>
+                                        <span>:</span>
+                                            <input type="number" name="today" id="today_boiler1" value="0"/>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="사용량">
+                                        <p>사용량</p>
+                                        <span>:</span>
+                                        <input type="number" name="vaues" id="values_boiler1" value="10000" readonly/>
+                                    </label>
+                                </li>
+                                <li class="bottom_li">
+                                    <label for="월누적량">
+                                        <p>월 누적량</p>
+                                        <span>:</span>
+                                        <input type="number" name="stock" id="values_month_boiler1" value="10000" readonly/>
+                                    </label>
+                                </li>
+                            </ul>
+                            <!--boiler1-->
+                            <ul class="boiler2">
+                                <li class="data_titles"><p>보일러2</p></li>
+                                <li>
+                                    <label for="전원지침">
+                                        <p>전월지침</p>
+                                        <span>:</span>
+                                        <input type="number" name="전월지침" id="month_boiler2" value="10000" readonly/>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="전일지침">
+                                        <p>전일지침</p>
+                                        <span>:</span>
+                                        <input type="number" name="전월지침" id="yesterday_boiler2" value="10000"/>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="금일지침">
+                                        <p>금일지침</p>
+                                        <span>:</span>
+                                            <input type="number" name="today" id="today_boiler2" value="0"/>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="사용량">
+                                        <p>사용량</p>
+                                        <span>:</span>
+                                        <input type="number" name="전월지침" id="values_boiler2" value="10000"/>
+                                    </label>
+                                </li>
+                                <li class="bottom_li">
+                                    <label for="월누적량">
+                                        <p>월 누적량</p>
+                                        <span>:</span>
+                                        <input type="number" name="전월지침" id="values_month_boiler2" value="10000"/>
+                                    </label>
+                                </li>
+                                <!-- <li class="bottom_li">
+                                    <label for="상태">
+                                        <p>월 누적량</p>
+                                        <span>:</span>
+                                        <input type="radio" name="" id="state_ok" value="양호">
+                                        <input type="radio" name="" id="state_no" value="불량">
+                                    </label>
+                                </li> -->
+                            </ul>
+                            <!--boiler2-->
+                        </div>
+                    </div>
+                </div>
+                
+        </div>
+    </div>
+    <!-- content -->
+        </div>
+        <!-- content -->
+        <!-- <div class="footer">
+            <p>(주)삼경엠에스 / 경기도 군포시 산본로 94, 3층</p>
+            <p>전화번호 : 031-386-6556  /  개인정보보호책입자 ; 권동환</p>
+            <p>COPYRIGHT (주)삼경엠에스 All Right Reserved</p>
+        </div> -->
+         <!-- footer -->
+         <div class="nav">
+            <a class="nav_btn">개인정보</a>
+            <a href="/dashboard" class="nav_btn">홈</a>
+            <a href="/report" class="nav_btn">업무보고</a>
+         </div>
+    </div>
+</body>
+<script src="/pages/data.js"></script>
+<script src="/pages/data_report.js"></script>
+</html>

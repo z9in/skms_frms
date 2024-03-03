@@ -1,0 +1,202 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  a {
+    text-decoration: none;
+    color: #000;
+  }
+  body {
+      font-family: Arial, sans-serif;
+      width: 100vw;
+      height: 100vh;
+      margin: auto;
+    }
+    
+.wrap {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+}
+.title {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(148, 238, 148)
+}
+.date {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(6, 168, 6)
+}
+.date > p {
+    font-weight: 600;
+    color: #ffff;
+    font-size: 13px;
+}
+.user_info {
+    background-color: #eee;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.user_info > p > .bold {
+    font-weight: 600;
+}
+.content {
+    width: 100%;
+    height: calc(100% - (280px));
+}
+.checking_class {
+    width: 100%;
+    height: 50px;
+    background-color: #ffff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 10px;   
+    padding-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.checking_class > .btn {
+    background-color: #ffff;
+    color: #aaa;
+    font-weight: 400;
+    text-align: center;
+    line-height: 30px;
+    box-shadow: 1px 1px 5px 1px #aaa;
+    width: 25%;
+    height: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.checking_class > .btn:hover {
+    background-color: #0f0f0f;
+    color: #fff;
+}
+.check_list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    height: calc(100% - 50px);
+    /* outline: 1px solid black; */
+}
+.list_total {
+    border: 1px solid rgb(143, 143, 222);
+    box-shadow: 1px 1px 5px 2px #ccc;
+    background-color: #fff;
+    border-radius: 10px;
+    width: 90%;
+    height: 150px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+.list_total > p {
+    text-align: left;
+}
+.list_total > p > span{
+    font-size: 50px;
+}
+.list_total > a {
+    font-size: 13px;
+    text-decoration: none;
+}
+.list_leave {
+    border: 1px solid blue;
+    box-shadow: 1px 1px 5px 2px #ccc;
+    background-color: #fff;
+    border-radius: 10px;
+    width: 43%;
+    height: 100px;
+    /* margin-top: 10px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 2%;
+    padding-left: 10px;
+
+}
+.list_problem {
+    border: 1px solid red;
+    box-shadow: 1px 1px 5px 2px #ccc;
+    background-color: #fff;
+    border-radius: 10px;
+    width: 43%;
+    height: 100px;
+    /* margin: 10px 0; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 2%;
+    padding-left: 10px;
+}
+.list_leave > p {
+    text-align: left;
+    width: 100%;
+    margin-bottom: 5px;
+}
+.list_leave > p > span {
+    font-size: 40px;
+}
+.list_problem > p {
+    text-align: left;
+    width: 100%;
+    margin-bottom: 5px;
+}
+.list_problem > p > span {
+    font-size: 40px;
+}
+.list_leave > a {
+    font-size: 13px;
+    text-decoration: none;
+}
+.list_problem > a {
+    font-size: 13px;
+    text-decoration: none;
+}
+.footer {
+    /* outline: 1px solid black; */
+    background-color: #eee;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.footer > p {
+    /* outline: 1px solid black; */
+    font-size: 12px;
+    text-align: center;
+    width: 100%;
+}
+.nav {
+    /* outline: 1px solid black; */
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+.nav > .nav_btn {
+    width: 34%;
+    height: 100%;
+    background-color: #fff;
+    color: black;
+    border: 1px solid #ccc;
+    text-align: center;
+    line-height: 300%;
+}
