@@ -163,9 +163,9 @@ app.post('/boiler2', async (req,res)=>{
   console.log("로그", values, data)
   let last_month = data.last_month;
   let yesterday = data.yesterday;
-  let user = await Boiler.create({
+  let user = await Boiler2.create({
     last_month: last_month,
-    yesterday: yesterday,
+    yesterday: yesterday + values,
     today: values,
     value: values - yesterday,
     value_month: values - last_month,
